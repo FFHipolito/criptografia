@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <meta name="author" content="Fernando Fontes Hipólito" />
+    <meta name="description" content="Uma viagem pela criptografia." />
+    <meta
+      name="keywords"
+      content="criptografia, ciframento
+      codificação,
+      criptologia,
+      encriptação,
+      escrita secreta"
+    />
+    <title>Decodificador</title>
+  </head>
+  <body>
+    <div class="page">
+      <main class="content">
+        <section class="decodificador__esquerdo">
+          <div class="header__logo"></div>
+          <textarea
+            class="decodificador__esquerdo-texto"
+            placeholder="Digite seu texto"
+            cols="20"
+            rows="10"
+            required
+          ></textarea>
+          <div class="decodificador__esquerdo-container">
+            <img
+              class="decodificador__esquerdo-imagem"
+              src="./images/bi_exclamation-circle-fill.png"
+              alt="Imagem com uma exclamação"
+            />
+            <p class="decodificador__esquerdo-regra">
+              Apenas letras minúsculas e sem acento.
+            </p>
+          </div>
+          <div class="decodificador__esquerdo-botao-container">
+            <button
+              class="decodificador__esquerdo-botao-esquerdo"
+              type="button"
+            >
+              Criptografar
+            </button>
+            <button class="decodificador__esquerdo-botao-direito" type="button">
+              Descriptografar
+            </button>
+          </div>
+        </section>
+
+        <section class="decodificador__direito">
+          <img
+            class="decodificador__direito-imagem"
+            src="./images/detetive.svg"
+            alt="Moça com uma lupa"
+          />
+          <textarea
+            class="decodificador__direito-titulo decodificador__direito-titulo-hidden"
+            cols="20"
+            rows="10"
+          ></textarea>
+          <p class="decodificador__direito-paragrafo">
+            Digite um texto que você deseja<br />
+            criptografar ou descriptografar.
+          </p>
+          <button class="decodificador__direito-botao" type="button">
+            Copiar
+          </button>
+        </section>
+      </main>
+    </div>
+    <script src="/index.js"></script>
+  </body>
+</html>
